@@ -1,0 +1,22 @@
+﻿<Window x:Class="Window_About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_FusionPictures"
+        mc:Ignorable="d"
+        Title="About me" Height="450" Width="800"
+        MinHeight="640" MinWidth="850">
+    <Grid>
+       <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>   
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Source="pack://application:,,,/Resource/man.jpg"></Image>
+        <WebBrowser Grid.Row="0" Grid.Column="1" Source="pack://siteoforigin:,,,/Resource/About.mht">
+        </WebBrowser>
+    </Grid>
+</Window>

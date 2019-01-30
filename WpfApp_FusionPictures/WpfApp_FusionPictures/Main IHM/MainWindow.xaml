@@ -1,0 +1,36 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp_FusionPictures"
+        mc:Ignorable="d"
+        Title="Fusion Pictures" Height="450" Width="800">
+
+   
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+             </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Button Name="Button_AddProject" Click="Button_AddProject_Click" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="0">Add Projet</Button>
+
+      
+        <ScrollViewer Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <StackPanel Margin="3" Orientation="Vertical" Name="StackPanel_Projects">
+                
+                
+                </StackPanel>
+            </ScrollViewer>
+            <Button Name="Button_About" Click="Button_About_Click" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="2">About Me</Button>
+        </Grid>
+            
+       
+
+</Window>
